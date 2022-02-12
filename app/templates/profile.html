@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+    <div class = 'content'>
+    <div class = 'p'>
+
+    <section class = 'header'>
+        <div class = 'image'>
+            <img src="{{url_for('static', filename='profile.png')}}" />
+        </div>
+        <div class = 'name'><span>Shantel Wellington</span></div>
+
+        <div class = 'username'>@<span>swellington</span></div>
+
+        <div class = 'location'> Kingston, Jamaica</div>
+
+        <div class = 'join'> {{date}}</div>
+        <hr class ='line'>
+    </section>
+
+    <section class = 'add-info'>
+        <div class = 'about-self'>
+            <p  class="abt">Hello, my name is Shantel Wellington and I currently attend The University 
+                of the West Indies where i am pursing a Bachelor's of science degree in Computer Science.
+            </p>
+        </div>
+
+    </section>
+
+    <div class = 'followers'>
+        <div class = 'posts'> <span class = 'b'>7 </span> </div>
+        
+        <div class = 'following'> <span  class = 'b'>1000 </span></div>
+    
+        <div class = 'followers'> <span  class = 'b'>67 </span></div>
+
+    </div>
+
+    <div class = 'followers-info'>
+        <div class = 'posts'> <span>Posts </span> </div>
+        
+        <div class = 'following'> <span>Following</span></div>
+    
+        <div class = 'followers'> <span>Followers</span></div>
+
+    </div>
+
+    <div class="f-btn">
+        <button>Follow</button>
+    </div>
+
+</div>
+</div>
+
+{% endblock %}
